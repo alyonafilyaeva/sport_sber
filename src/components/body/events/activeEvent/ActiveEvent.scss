@@ -18,6 +18,14 @@
             top: 40%;
             left: 106px;
 
+            &__moderator {
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: -80%;
+                left: -20%;
+            }
+
             &__top {
                 &__name {
                     color: #000;
@@ -92,6 +100,12 @@
             /* width: 800px; */
         }
     }
+
+    &__btn {
+        &__mobile {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -121,6 +135,10 @@
                 position: absolute;
                 top: 40%;
                 left: 106px;
+
+                &__moderator {
+                    display: none;
+                }
 
                 &__top {
                     display: none;

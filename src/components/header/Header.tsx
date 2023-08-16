@@ -26,6 +26,8 @@ function Header() {
           <NavLink to='/quests' className='header__right__nav__link'>Квесты</NavLink>
           <NavLink to='/main' className='header__right__nav__link'>Площадки</NavLink>
           <NavLink to='/profile' className='header__right__nav__link'>Профиль</NavLink>
+          <NavLink to='/main' className='header__right__nav__link'>Статистика</NavLink>
+          <NavLink to='/profile' className='header__right__nav__link'>Продвижение</NavLink>
           <NavLink to='/login' className='header__right__nav__link header__right__nav__link__enter'>Выход</NavLink>
         </nav>
       </div>

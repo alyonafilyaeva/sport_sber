@@ -13,6 +13,10 @@ import ProfilePage from './pages/profilePage/ProfilePage';
 import Navbar from './components/navbar/Navbar';
 import SearchEvent from './pages/searchEventPage/SearchEvent';
 import QuestPage from './pages/questsPage/QuestPage';
+import EventsModerator from './pages/eventsModeratorPage/EventsModerator';
+import QuestsModerator from './components/body/quests/questsModerator/QuestsModerator';
+import AddEventPage from './pages/addEventPage/AddEventPage';
+import AddQuestPage from './pages/addQuestPage/AddQuestPage';
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
             <Route path='/events' element={<SearchEvent />} />
             <Route path='/event/:id' element={<ActiveEvent event={{}} />} />
             <Route path='/quests' element={<QuestPage />} />
+            <Route path='/events_moderator' element={<EventsModerator />} />
+            <Route path='/quests_moderator' element={<QuestsModerator />} />
+            <Route path='/add_event' element={<AddEventPage />} />
+            <Route path='/add_quest' element={<AddQuestPage />} />
           </Routes>
         </AuthProvider>
 

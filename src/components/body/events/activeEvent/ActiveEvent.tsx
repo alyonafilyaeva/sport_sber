@@ -32,6 +32,10 @@ const ActiveEvent = (props: ActiveEventProps) => {
                 <div className="active__picture">
                     <img src={activeEventAva} alt="activeEventAva" />
                     <div className="active__picture__text">
+                        <div className="active__picture__text__moderator">
+                            <Button label="Редактировать" color="grey"/>
+                            <Button label="Удалить" color="red"/>
+                        </div>
                         <div className="active__picture__text__top">
                             <div className="active__picture__text__top__name">{location?.state?.name}</div>
                             <div className="active__picture__text__top__date">{location?.state?.date.split("T")[0]}</div>
