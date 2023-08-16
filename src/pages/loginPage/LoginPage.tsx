@@ -2,8 +2,14 @@ import React from 'react'
 import './LoginPage.scss'
 import Button from '../../elements/button/Button'
 import TextField from '@mui/material/TextField';
+import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
+  let nav = useNavigate()
+  function handleClick() {
+    console.log('//')
+    nav('/select')
+  }
   return (
     <div className='container'>
       <div className='login'>
@@ -29,9 +35,9 @@ function LoginPage() {
               className='login__block__form__input'
             />
           </div>
-          <div className='auth__block__buttons'>
-            <Button label='Войти' color='blue' />
-            <Button label='Зарегистрироваться' color='white' />
+          <div className='auth__block__buttons' onClick={() => nav('/select')}>
+            <Button label='Войти' color='blue' onClick={() => nav('/select')}/>
+            {/* <Button label='Зарегистрироваться' color='white' /> */}
             <p>Я не помню пароль</p>
           </div>
         </div>

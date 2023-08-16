@@ -23,6 +23,12 @@
         border: 1px solid $red;
         color: $red;
     }
+
+    &__red {
+        border: 1px solid $red;
+        background-color: $red;
+        color: #FFF;
+    }
 }
 
 @media screen and (max-width: 480px) {

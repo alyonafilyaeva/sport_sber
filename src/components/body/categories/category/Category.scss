@@ -19,6 +19,12 @@
         justify-content: center;
         align-items: center;
         width: auto;
+        margin-bottom: 5px;
+
+        &__click {
+            background: #3F5C8E;
+            color: #FFF;
+        }
     }
 
     &__select {

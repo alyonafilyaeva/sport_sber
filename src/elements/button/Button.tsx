@@ -4,6 +4,7 @@ import './Button.scss'
 interface ButtonProps {
   label: string
   color: string
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 function Button(props: ButtonProps) {

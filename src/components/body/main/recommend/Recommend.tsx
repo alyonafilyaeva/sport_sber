@@ -20,7 +20,7 @@ const Recommend = () => {
         console.log(data?.data)
     } */
     console.log(events)
-    let elements = events.reverse().slice(0, 3).map(event => <Event event={event} />)
+    let elements = events.reverse().slice(0, 3).map(event => <Event event={event} view="small"/>)
     /* useEffect(() => {
         getEvents()
     }, []) */

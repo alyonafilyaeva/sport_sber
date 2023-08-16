@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+.navbar {
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    .navbar {
+        display: flex;
+        position: fixed;
+        top: 90%;
+        background: var(--sky-white, #FFF);
+        width: 100vw;
+        z-index: 1;
+        padding-bottom: 20px;
+        box-shadow: 0px 0px 8px 0px rgba(20, 20, 20, 0.08), 0px 0px 1px 0px rgba(20, 20, 20, 0.04);
+    
+        &__links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100vw;
+    
+            &__link {
+                background: url('../../imgs//navbar.svg');
+                background-repeat: no-repeat;
+                padding-top: 40px;
+                background-position: 50% 50%;
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+    }
+}

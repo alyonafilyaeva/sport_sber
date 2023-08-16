@@ -2,4 +2,44 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+
+    &__mobile {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .mainPage {
+        width: auto;
+        overflow-x: hidden;
+
+        &__mobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+
+            &__btn {
+                border-radius: 48px;
+                background: #112F63;
+                text-align: center;
+                align-items: center;
+                height: 32px;
+                text-decoration: none;
+                color: #FFF;
+                padding: 0 15px;
+            }
+        }
+
+        &__desktop {
+            display: none;
+        }
+    }
 }

@@ -11,15 +11,15 @@ function Calendar() {
           <CalendarMini />
           <div className='calendar__block'>
             <h3>18 августа, сегодня</h3>
-            <EventsList events={initialEvent.events} type='mini' />
+            <EventsList events={initialEvent.events} type='mini' view='small'/>
           </div>
           <div className='calendar__block'>
             <h3>Запланированные</h3>
-            <EventsList events={initialEvent.events} type='mini' />
+            <EventsList events={initialEvent.events} type='mini' view='small'/>
           </div>
           <div className='calendar__block'>
             <h3>Завершенные</h3>
-            <EventsList events={initialEvent.events} type='mini' />
+            <EventsList events={initialEvent.events} type='mini' view='small'/>
           </div>
       </div>
     </div>

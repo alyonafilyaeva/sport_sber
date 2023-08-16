@@ -1,0 +1,29 @@
+@import '../../../../../variables.scss';
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__left {
+        display: flex;
+        flex-direction: row;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px;
+
+            p {
+                margin: 5px 0;
+            }
+
+            p:first-child {
+                color: $blue
+            }
+            p:last-child {
+                color: #666666
+            }
+        }
+    }
+}

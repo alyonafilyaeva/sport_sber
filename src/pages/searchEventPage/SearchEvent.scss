@@ -1,0 +1,24 @@
+.searchEvents {
+    width: auto;
+    overflow-x: hidden;
+    padding: 0 25px;
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+
+        h3 {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 18px;
+            margin-left: 25%;
+        }
+    }
+
+    &__input {
+        width: 347px;
+        background: var(--sky-lighter, #F2F4F5);
+
+    }
+}

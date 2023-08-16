@@ -7,11 +7,12 @@ import heart from '../../../../imgs/heart.svg'
 
 interface EventProps {
   event: IEvent
+  view: string
 }
 
 function Event(props: EventProps) {
   return (
-    <NavLink to={`/event/${props.event.event_id}`} className="event" state={props.event}>
+    <NavLink to={`/event/${props.event.event_id}`} className={`event event__${props.view}`} state={props.event}>
     <div className="event__top">
         <img src={eventAva} alt='eventAva'/>
         <img src={heart} alt='heart' className="event__top__heart" /* onClick={() => handleClick()} *//>

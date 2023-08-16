@@ -1,10 +1,13 @@
 .calendar {
+    
     &__days {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
-
+        border-radius: 12px;
+        border: 1px solid #D9D9D9;
+        padding: 10px;
         &__day {
             display: flex;
             flex-direction: column;

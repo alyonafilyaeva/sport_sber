@@ -33,3 +33,13 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .unusual {
+        &__pictures {
+            overflow-x: hidden;
+
+            img {max-width:328px;height:auto;}
+        }
+    }
+}

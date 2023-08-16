@@ -16,7 +16,10 @@ export interface IEvent {
 }
 
 export interface IQuest {
-
+    quest_id: number
+    name: string
+    description: string
+    time: string
 }
 
 export interface ICategory {

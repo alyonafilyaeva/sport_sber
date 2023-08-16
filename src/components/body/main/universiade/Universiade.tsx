@@ -6,10 +6,10 @@ const Universiade = () => {
     return (
         <div>
             <div className="ekat">
-                <h1>Екатеринбург 300</h1>
+                <h1>Универсиада</h1>
                 <div className="ekat__pictures">
                     <img src={universiade1} alt="ekaterinburg1" />
-                    <img src={universiade2} alt="ekaterinburg2" />
+                    <img src={universiade1} alt="ekaterinburg2" />
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ import { initialEvent } from '../../../../store'
 function Favourites() {
   return (
     <div className='container'>
-      <EventsList events={initialEvent} type='full' />
+      <EventsList events={initialEvent} type='full' view='big'/>
     </div>
   )
 }

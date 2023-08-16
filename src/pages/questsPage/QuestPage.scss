@@ -1,0 +1,25 @@
+.quests {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    &__switch {
+        display: flex;
+        flex-direction: row;
+
+        p {
+            border-radius: 48px;
+            border: 1px solid rgba(17, 47, 99, 0.70);
+            height: 33px;
+            text-align: center;
+            padding: 0 20px;
+        }
+    }
+}

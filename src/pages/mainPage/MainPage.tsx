@@ -6,17 +6,29 @@ import Soon from '../../components/body/main/soon/Soon'
 import Universiade from '../../components/body/main/universiade/Universiade'
 import Recommend from '../../components/body/main/recommend/Recommend'
 import Support from '../../components/body/main/support/Support'
+import { NavLink } from 'react-router-dom'
 
 function MainPage() {
   return (
     <div className='container'>
       <div className='mainPage'>
-          <CategoriesList view='see'/>
-          <Calendar />
-          <Soon />
-          <Universiade />
-          <Recommend />
-          <Support />
+        <div className='mainPage__mobile'>
+          <h1>Афиша</h1>
+          <NavLink to='/events' className='mainPage__mobile__btn'>Найти</NavLink>
+        </div>
+        <div className='mainPage__desktop'>
+          <CategoriesList view='see' />
+          <div>
+            <h1>Календарь событий</h1>
+            <Calendar />
+          </div>
+          
+        </div>
+
+        <Soon />
+        <Universiade />
+        <Recommend />
+        <Support />
       </div>
     </div>
   )

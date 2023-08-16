@@ -10,12 +10,17 @@ import Button from './elements/button/Button';
 import StartPage from './pages/startPage/StartPage';
 import SelectPage from './pages/selectPage/SelectPage';
 import ProfilePage from './pages/profilePage/ProfilePage';
+import Navbar from './components/navbar/Navbar';
+import SearchEvent from './pages/searchEventPage/SearchEvent';
+import QuestPage from './pages/questsPage/QuestPage';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      
       <Router>
+      <Header />
+      <Navbar />
         <AuthProvider>
           <Routes>
             <Route path='/' element={<StartPage />} />
@@ -23,8 +28,9 @@ function App() {
             <Route path='/login' element={<LoginPage />} />
             <Route path='/select' element={<SelectPage />}/>
             <Route path='/profile' element={<ProfilePage />}/>
+            <Route path='/events' element={<SearchEvent />} />
             <Route path='/event/:id' element={<ActiveEvent event={{}} />} />
-            
+            <Route path='/quests' element={<QuestPage />} />
           </Routes>
         </AuthProvider>
 

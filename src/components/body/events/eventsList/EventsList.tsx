@@ -9,6 +9,7 @@ import EventMini from '../eventMini/EventMini'
 interface EventsListProps {
   events: object
   type: string
+  view: string
 }
 
 function EventsList(props: EventsListProps) {
@@ -25,7 +26,7 @@ function EventsList(props: EventsListProps) {
     console.log(data?.data)
   } */
   let elements = events.map(event => 
-    props.type === 'full'? <Event event={event} /> : <EventMini event={event} />
+    props.type === 'full'? <Event event={event} view={props.view}/> : <EventMini event={event} />
   )
   /* useEffect(() => {
     getEvents()

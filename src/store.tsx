@@ -55,11 +55,30 @@ export const initialEvent = {
 }
 
 export const initialQuest = {
+    'quest_id': 1,
+    'name': 'Урал на Арене',
+    'description': 'эВсем любителям футбола приготовиться! Завтра встречаемся на Арене!',
+    'time': '1:49:32'
 
 }
 
 export const initialCategories = {
     categories: [
+        {
+            'category_id': 1,
+            'category_name': 'Футбол',
+            'category_rating': 4.7
+        },
+        {
+            'category_id': 2,
+            'category_name': 'Плавание',
+            'category_rating': 3.7
+        },
+        {
+            'category_id': 3,
+            'category_name': 'Легкая атлетика',
+            'category_rating': 6.7
+        },
         {
             'category_id': 1,
             'category_name': 'Футбол',

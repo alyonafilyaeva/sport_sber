@@ -2,12 +2,30 @@
     &__pictures {
         display: flex;
         justify-content: space-between;
+        overflow-x: hidden;
+
+        img {
+            border-radius: 14px;
+        }
         img:first-child {
             width: 800px;
+            margin-right: 50px;
         }
 
         img:last-child {
-            width: 320px;
+            /* width: 320px; */
+            object-fit: cover;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ekat {
+        &__pictures {
+            overflow-x: scroll;
+
+            img {max-width:328px;height:auto;}
         }
     }
 }
