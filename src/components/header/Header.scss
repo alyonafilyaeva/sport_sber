@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+.header {
+    display: flex;
+height: 65px;
+padding: 0px 140px;
+align-items: center;
+gap: 180px;
+background: $blue;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        display: none;
+    }
+}

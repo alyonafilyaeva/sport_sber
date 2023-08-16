@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+.btn {
+    display: flex;
+    width: 200px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 48px; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+
+    &__blue {
+        background: $blue;
+        border: 1px solid $blue;
+        color: #FFF;
+    }
+
+    &__white {
+        border: 1px solid $red;
+        color: $red;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        width: 327px;
+    }
+}

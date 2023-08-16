@@ -1,0 +1,87 @@
+@import '../../../../variables.scss';
+
+.category {
+    &__see {
+        display: flex;
+        border-radius: 48px;
+        border: 1px solid rgba(17, 47, 99, 0.70);
+        color: #15284A;
+        height: 33px;
+        padding: 0 20px;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        margin-right: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    &__select {
+        display: flex;
+        text-align: center;
+        width: auto;
+        padding: 0 20px;
+        height: 40px;
+        border-radius: 12px;
+        border: 1px solid #CDCFD0;
+        color: $blue;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Inter';
+        font-size: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+
+        &__click {
+            background: rgba(197, 23, 44, 0.30);
+            ;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .category {
+        &__see {
+            display: flex;
+            border-radius: 48px;
+            border: 1px solid rgba(17, 47, 99, 0.70);
+            color: #15284A;
+            height: 33px;
+            padding: 0 20px;
+            text-align: center;
+            font-family: 'Inter';
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            margin-right: 10px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+        }
+    
+        &__select {
+            display: flex;
+            text-align: center;
+            width: auto;
+            padding: 0 20px;
+            height: 32px;
+            border-radius: 12px;
+            border: 1px solid rgba(17, 47, 99, 0.70);
+            color: $blue;
+            margin: 7px;
+
+    
+            &__click {
+                border: none;
+            }
+        }
+    }
+}

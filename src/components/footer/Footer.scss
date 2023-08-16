@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+.footer {
+    background: $blue;
+    height: 183px;
+padding: 30px 140px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        /* display: none; */
+        z-index: 1;
+        position: sticky;
+        top: 0
+    }
+}

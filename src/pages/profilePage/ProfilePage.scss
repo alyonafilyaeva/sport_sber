@@ -1,0 +1,29 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+
+    &__switch {
+        display: flex;
+        flex-direction: row;
+
+        &__item {
+            display: flex;
+            border-radius: 48px;
+            border: 1px solid rgba(17, 47, 99, 0.70);
+            height: 33px;
+            width: auto;
+            padding: 0 20px;
+            color: #15284A;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-right: 10px;
+            cursor: pointer;
+
+            &__active {
+                background: #3F5C8E;
+                color: #FFF;
+            }
+        }
+    }
+}

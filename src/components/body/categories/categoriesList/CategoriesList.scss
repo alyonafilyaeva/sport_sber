@@ -1,0 +1,21 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: start;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    }
+}

@@ -1,0 +1,47 @@
+@import '../../../../variables.scss';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+    &__slogan {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding-left: 140px;
+        text-align: start;
+        padding-top: 57px;
+        z-index: 1;
+
+        h1 {
+            color: #FFF;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 60px;
+        }
+    }
+
+    &__pictures {
+        display: flex;
+        position: relative;
+        z-index: -1;
+
+        img:last-child {
+            position: absolute;
+            top: 57px;
+            left: 362px
+        }
+    }
+
+    &__text {
+        color: $blue;
+        text-align: end;
+        margin-top: 447px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
