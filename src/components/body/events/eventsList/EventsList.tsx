@@ -25,15 +25,20 @@ function EventsList(props: EventsListProps) {
     setEvents(data?.data)
     console.log(data?.data)
   } */
-  let elements = events.map(event => 
-    props.type === 'full'? <Event event={event} view={props.view}/> : <EventMini event={event} />
+  let elements = events.map(event =>
+    props.type === 'full' ? <Event event={event} view={props.view} type={props.type}/> : <EventMini event={event} />
   )
   /* useEffect(() => {
     getEvents()
   }, []) */
   return (
     <div className='eventList'>
-      {elements}
+      <div className='eventList__desktop'>
+        {elements}
+      </div>
+      <div className={`eventList__mobile eventList__mobile__${props.type}`}>
+        {elements}
+      </div>
     </div>
   )
 }

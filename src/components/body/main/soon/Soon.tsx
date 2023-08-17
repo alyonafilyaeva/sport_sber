@@ -20,7 +20,7 @@ const Soon = () => {
         console.log(data?.data)
     } */
     console.log(events)
-    let elements = events?.slice(0, 3).map(event => <Event event={event} view="small" />)
+    let elements = events?.slice(0, 3).map(event => <Event event={event} view="small" type="mini"/>)
     /* useEffect(() => {
         getEvents()
     }, []) */

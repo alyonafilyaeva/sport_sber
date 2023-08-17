@@ -1,0 +1,11 @@
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .mobile {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+}

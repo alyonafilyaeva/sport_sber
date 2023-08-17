@@ -1,25 +1,90 @@
 .quests {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    padding: 0 20px;
 
-    &__top {
+    &__desktop {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 24px;
-    }
+        flex-direction: column;
+        text-align: left;
 
-    &__switch {
-        display: flex;
-        flex-direction: row;
+        &__top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
 
-        p {
-            border-radius: 48px;
-            border: 1px solid rgba(17, 47, 99, 0.70);
-            height: 33px;
-            text-align: center;
-            padding: 0 20px;
+        &__switch {
+            display: flex;
+            flex-direction: row;
+
+            p {
+                border-radius: 48px;
+                border: 1px solid rgba(17, 47, 99, 0.70);
+                height: 33px;
+                text-align: center;
+                padding: 0 20px;
+            }
         }
     }
+
+    &__mobile {
+        display: none;
+        flex-direction: column;
+
+        &__top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__rating {
+            border-radius: 12px;
+            border: 1px solid #E0E0E0;
+            width: 290px;
+            padding: 5px 0;
+            margin: 10px 0;
+            color: #000;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            text-decoration: none;
+        }
+
+        &__switch {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 290px;
+            border-radius: 8px;
+            background: var(--sky-lighter, #F2F4F5);
+            margin-bottom: 20px;
+
+            p {
+                margin: 0;
+                text-align: center;
+                padding: 5px 0;
+            }
+
+            
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .quests {
+        &__desktop {
+            display: none;
+        }
+
+        &__mobile {
+            width: auto;
+            display: flex;
+        }
+    }
+
 }

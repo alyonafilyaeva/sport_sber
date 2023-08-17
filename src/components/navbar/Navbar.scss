@@ -6,6 +6,7 @@
     .navbar {
         display: flex;
         position: fixed;
+        width: auto;
         top: 90%;
         background: var(--sky-white, #FFF);
         width: 100vw;
@@ -23,7 +24,7 @@
                 background: url('../../imgs//navbar.svg');
                 background-repeat: no-repeat;
                 padding-top: 40px;
-                background-position: 50% 50%;
+                background-position: 50% 20%;
                 text-decoration: none;
                 color: $blue;
             }

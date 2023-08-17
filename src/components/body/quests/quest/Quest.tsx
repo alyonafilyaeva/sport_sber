@@ -26,7 +26,7 @@ function Quest(props: QuestProps) {
             </div>
             <div className='quest__btns'>
                 <Button label='Смотреть событие' color='blue' />
-                <Button label='Участовать' color='blue' />
+                <Button label='Участовать' color='red' />
             </div>
         </div>
     )

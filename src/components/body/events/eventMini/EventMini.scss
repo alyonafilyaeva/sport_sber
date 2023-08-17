@@ -67,3 +67,20 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .eventMini {
+        width: 360px;
+        padding-right: 150px;
+
+        &__bottom {
+                &__ticket {
+                    top: 45%;
+                    left: 150%
+                }
+            
+        }
+
+        
+    }
+}

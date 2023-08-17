@@ -29,10 +29,15 @@
         background-color: $red;
         color: #FFF;
     }
+
+    &__grey {
+        background-color: #666666;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .btn {
-        width: 327px;
+        /* width: 327px; */
+        height: 32px;
     }
 }

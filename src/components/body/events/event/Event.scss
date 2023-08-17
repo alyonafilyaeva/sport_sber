@@ -66,25 +66,35 @@
 
 @media screen and (max-width: 480px) {
     .event {
-        
+        /* width: 200px; */
         border-radius: 12px;
         border: 1px solid #E0E0E0;
         margin-right: 45px;
         position: relative;
         text-decoration: none;
         color: #000;
+        margin-bottom: 20px;
+        
 
         &__small {
             width: 186px;
-            
+            img {max-width:186px;height:auto;}
         }
 
         &__bottom {
-            display: none;
+            /* display: none; */
+            &__mini {
+                display: none;
+            }
         }
 
         &__big {
-            width: 360px;
+            width: 300px;
+            img {max-width:300px;height:auto;}
+
+            &__top {
+                img {max-width:400px;height:auto;}
+            }
         }
         img {max-width:186px;height:auto;}
 

@@ -1,29 +1,92 @@
 .profile {
     display: flex;
     flex-direction: column;
+    text-align: left;
 
-    &__switch {
-        display: flex;
-        flex-direction: row;
-
-        &__item {
+    &__desktop {
+        &__switch {
             display: flex;
-            border-radius: 48px;
-            border: 1px solid rgba(17, 47, 99, 0.70);
-            height: 33px;
-            width: auto;
-            padding: 0 20px;
-            color: #15284A;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-right: 10px;
-            cursor: pointer;
+            flex-direction: row;
 
-            &__active {
-                background: #3F5C8E;
-                color: #FFF;
+            &__item {
+                display: flex;
+                border-radius: 48px;
+                border: 1px solid rgba(17, 47, 99, 0.70);
+                height: 33px;
+                width: auto;
+                padding: 0 20px;
+                color: #15284A;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-right: 10px;
+                cursor: pointer;
+
+                &__active {
+                    background: #3F5C8E;
+                    color: #FFF;
+                }
             }
+        }
+    }
+
+    &__mobile {
+        width: auto;
+        overflow-x: hidden;
+        padding: 25px;
+        display: none;
+        flex-direction: column;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                margin: 5px 0;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            justify-content: start;
+            border-radius: 12px;
+border: 1px solid #E0E0E0;
+padding: 10px;
+
+            a {
+                color: #000;
+                font-family: 'Inter';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                text-decoration: none;
+                margin: 10px 0;
+                text-align: left;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .profile {
+        &__desktop {
+            display: none;
+        }
+
+        &__mobile {
+            display: flex;
         }
     }
 }

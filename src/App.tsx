@@ -17,6 +17,9 @@ import EventsModerator from './pages/eventsModeratorPage/EventsModerator';
 import QuestsModerator from './components/body/quests/questsModerator/QuestsModerator';
 import AddEventPage from './pages/addEventPage/AddEventPage';
 import AddQuestPage from './pages/addQuestPage/AddQuestPage';
+import Favourites from './components/body/profile/favourites/Favourites';
+import Calendar from './components/body/profile/calendar/Calendar';
+import Rating from './components/body/quests/rating/Rating';
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
             <Route path='/quests_moderator' element={<QuestsModerator />} />
             <Route path='/add_event' element={<AddEventPage />} />
             <Route path='/add_quest' element={<AddQuestPage />} />
+            <Route path='/favourites' element={<Favourites />} />
+            <Route path='/calendar' element={<Calendar />} />
+            <Route path='/rating' element={<Rating />} />
           </Routes>
         </AuthProvider>
 
